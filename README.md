@@ -105,8 +105,8 @@ class RecommenderNet(nn.Module):
         x = F.relu(self.fc1(x))
         rating_pred = self.fc2(x)
         return rating_pred
-Endpoints
 ```
+Endpoints
 /health (GET)
 Description: Returns the health status of the API and whether the model is loaded successfully.
 Response:
